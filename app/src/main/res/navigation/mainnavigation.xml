@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnavigation"
+    app:startDestination="@id/FData1">
+
+    <fragment
+        android:id="@+id/FData1"
+        android:name="com.example.myapplication.FData1"
+        android:label="fragment_f_data1"
+        tools:layout="@layout/fragment_f_data1" >
+        <action
+            android:id="@+id/action_FData1_to_FData2"
+            app:destination="@id/FData2" />
+    </fragment>
+    <fragment
+        android:id="@+id/FData2"
+        android:name="com.example.myapplication.FData2"
+        android:label="fragment_f_data2"
+        tools:layout="@layout/fragment_f_data2" >
+        <action
+            android:id="@+id/action_FData2_to_FData1"
+            app:destination="@id/FData1" />
+    </fragment>
+</navigation>
