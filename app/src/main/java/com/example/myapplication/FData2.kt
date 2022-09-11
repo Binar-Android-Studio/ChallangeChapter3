@@ -21,9 +21,7 @@ class FData2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        prev.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_FData2_to_FData1)
-        }
+
     }
 
 

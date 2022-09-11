@@ -34,5 +34,21 @@ class home : AppCompatActivity() {
             pindah.putExtra("detailalhabeth", it)
             startActivity(pindah)
         }
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fcfragment, FData1())
+            commit()
+        }
+        prev.setOnClickListener {
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.fcfragment, FData1())
+                commit()
+            }
+        }
+        next.setOnClickListener {
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.fcfragment, FData2())
+                commit()
+            }
+        }
     }
 }
